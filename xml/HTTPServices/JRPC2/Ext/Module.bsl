@@ -45,6 +45,33 @@
 		Возврат Ответ;
 	КонецПопытки;
 	
+	jsonrpc	= ТелоЗапросаКакСоответствие["jsonrpc"];
+	id		= ТелоЗапросаКакСоответствие["id"];
+	
+	Если jsonrpc = Неопределено ИЛИ jsonrpc <> "2.0" Тогда
+		СтруктураОшибки = СтруктураОшибки();
+		СтруктураОшибки.code = -32700;
+		СтруктураОшибки.message = "'method' - must be a String specifying the version of the JSON-RPC protocol. MUST be exactly ""2.0"".";
+		СтруктураОшибки.data = СтруктураОшибки.message;
+		СтруктураОтвета.error = СтруктураОшибки;
+		СтруктураОтвета.id = id;
+		Ответ.УстановитьТелоИзСтроки(СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
+		Возврат Ответ;
+	КонецЕсли;
+	
+	method	= ТелоЗапросаКакСоответствие["method"];
+	
+	Если method = Неопределено ИЛИ ТипЗнч(method) <> Тип("Строка") Тогда
+		СтруктураОшибки = СтруктураОшибки();
+		СтруктураОшибки.code = -32700;
+		СтруктураОшибки.message = "'method' - must be a String containing the name of the method to be invoked. Method names that begin with the word rpc followed by a period character (U+002E or ASCII 46) are reserved for rpc-internal methods and extensions and MUST NOT be used for anything else.";
+		СтруктураОшибки.data = СтруктураОшибки.message;
+		СтруктураОтвета.error = СтруктураОшибки;
+		СтруктураОтвета.id = id;
+		Ответ.УстановитьТелоИзСтроки(СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
+		Возврат Ответ;
+	КонецЕсли;
+	
 	ЧтениеJSОN.Закрыть();
 	Возврат Ответ;
 КонецФункции
