@@ -20,20 +20,19 @@ JSON-RPC 2.0 — это лёгкий протокол удалённого вы�
 
 ```text
 {схема}://{адрес_сервера}:{порт}/{имя_информационной_базы}/hs/jrpc/invoke
-```text
+```
 
 можно выполнять POST-запросы по протоколу JSON-RPC 2.0
 
 Пример:
-
 ```text
 POST /mars/hs/jrpc/invoke HTTP/1.1
 Content-Type: application/json
-```text
+```
 ```json
 {
     "jsonrpc": "2.0",
     "method": "system.ping",
     "id": 1
 }
-```json
+```
