@@ -32,9 +32,18 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфігурація</Name>
-			<Synonym/>
-			<Comment/>
+			<Name>Марс</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Марс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Марс</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Универсальный JSON-RPC 2.0 интерфейс для взаимодействия с информационной базой 1С.</Comment>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_19</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
@@ -196,7 +205,16 @@
 			<DefaultStyle/>
 			<DefaultLanguage>Language.Українська</DefaultLanguage>
 			<BriefInformation/>
-			<DetailedInformation/>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Универсальный JSON-RPC 2.0 интерфейс для взаимодействия с информационной базой 1С.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Универсальный JSON-RPC 2.0 интерфейс для взаимодействия с информационной базой 1С.</v8:content>
+				</v8:item>
+			</DetailedInformation>
 			<Copyright/>
 			<VendorInformationAddress/>
 			<ConfigurationInformationAddress/>
@@ -205,11 +223,17 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_19</CompatibilityMode>
+			<CompatibilityMode>Version8_3_10</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
+			<Language>Русский</Language>
 			<Language>Українська</Language>
+			<Subsystem>Марс</Subsystem>
+			<Role>ПолныеПрава</Role>
+			<Role>МарсВызовФункцийJsonRpc</Role>
+			<CommonModule>МарсДиспетчерЗапросов</CommonModule>
+			<HTTPService>Марс</HTTPService>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
