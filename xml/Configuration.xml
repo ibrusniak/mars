@@ -233,7 +233,7 @@
 			<Role>ПолныеПрава</Role>
 			<Role>МарсВызовФункцийJsonRpc</Role>
 			<CommonModule>МарсДиспетчерЗапросов</CommonModule>
-			<HTTPService>Марс</HTTPService>
+			<HTTPService>JRPC2</HTTPService>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

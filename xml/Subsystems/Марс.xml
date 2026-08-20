@@ -26,7 +26,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.МарсВызовФункцийJsonRpc</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МарсДиспетчерЗапросов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.Марс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.JRPC2</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

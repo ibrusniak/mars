@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>HTTPService.Марс.URLTemplate.Invoke.Method.POST</name>
+		<name>HTTPService.JRPC2.URLTemplate.Invoke.Method.POST</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

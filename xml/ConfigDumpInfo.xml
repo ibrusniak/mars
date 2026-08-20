@@ -3,11 +3,11 @@
 	<ConfigVersions>
 		<Metadata name="CommonModule.МарсДиспетчерЗапросов" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3" configVersion="6e913685200474409d75684057d97c0b00000000"/>
 		<Metadata name="Configuration.Марс" id="3b1dea08-cd26-4f1c-a7d6-3c3a4971fc1d" configVersion="19b68f3c8b40194fa18e86a39d44ece000000000"/>
-		<Metadata name="HTTPService.Марс" id="45fb5214-fdc3-4722-a814-502440ca0784" configVersion="cb019ffb84f9984589d251b7289683e600000000">
-			<Metadata name="HTTPService.Марс.URLTemplate.Invoke.Method.POST" id="40ba0891-d009-412c-854f-4cdd7374c11d"/>
-			<Metadata name="HTTPService.Марс.URLTemplate.Invoke" id="951a77f3-2fd2-445e-bcfb-ac72b690b1ea"/>
+		<Metadata name="HTTPService.JRPC2" id="45fb5214-fdc3-4722-a814-502440ca0784" configVersion="d28517785a07dc478c9b49554603faaf00000000">
+			<Metadata name="HTTPService.JRPC2.URLTemplate.Invoke.Method.POST" id="40ba0891-d009-412c-854f-4cdd7374c11d"/>
+			<Metadata name="HTTPService.JRPC2.URLTemplate.Invoke" id="951a77f3-2fd2-445e-bcfb-ac72b690b1ea"/>
 		</Metadata>
-		<Metadata name="HTTPService.Марс.Module" id="45fb5214-fdc3-4722-a814-502440ca0784.0" configVersion="8215db11b3e90747ad60fe812458225000000000"/>
+		<Metadata name="HTTPService.JRPC2.Module" id="45fb5214-fdc3-4722-a814-502440ca0784.0" configVersion="cf47bfb8cfd7a843b9b9f5a453c8db9f00000000"/>
 		<Metadata name="Language.Русский" id="d2dfabbf-bd9b-4029-8b6c-e5c063578ba3" configVersion="7aecfb4af9d902449767070d5712616700000000"/>
 		<Metadata name="Language.Українська" id="8c2bc5e4-4a44-4c59-86f7-b623bfa3439d" configVersion="51a40219d402df499e5fdaa1fb4e68c100000000"/>
 		<Metadata name="Role.МарсВызовФункцийJsonRpc" id="643492a4-8466-47a6-9f0f-fac543aaa680" configVersion="26536f1236ea5d4f8ae4f0cce43d7ef900000000"/>
