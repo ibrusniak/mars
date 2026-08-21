@@ -39,3 +39,12 @@ Content-Type: application/json
     "id": 1
 }
 ```
+Ответ:
+```json
+{
+    "jsonrpc": "2.0",
+    "result": "pong",
+    "error": null,
+    "id": 1
+}
+```

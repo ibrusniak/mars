@@ -38,3 +38,12 @@ Content-Type: application/json
     "id": 1
 }
 ```
+Відповідь:
+```json
+{
+    "jsonrpc": "2.0",
+    "result": "pong",
+    "error": null,
+    "id": 1
+}
+```
