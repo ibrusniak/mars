@@ -235,6 +235,7 @@
 			<CommonModule>МарсДиспетчерЗапросов</CommonModule>
 			<CommonModule>МарсОбщегоНазначения</CommonModule>
 			<HTTPService>JRPC2</HTTPService>
+			<Catalog>Товары</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

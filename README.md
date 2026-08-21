@@ -46,3 +46,46 @@ Content-Type: application/json
     "id": 1
 }
 ```
+
+Приклад:
+```text
+POST /mars/hs/jrpc/invoke HTTP/1.1
+Content-Type: application/json
+```
+```json
+{
+    "jsonrpc": "2.0",
+    "method": "getProducts",
+    "id": "2000"
+}
+```
+Відповідь:
+```json
+{
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "uuid": "6f8fdeeb-9d97-11f1-b9e5-da377166fb64",
+            "name": "Кроссовки Adidas",
+            "code": "000000001"
+        },
+        {
+            "uuid": "6f8fdeec-9d97-11f1-b9e5-da377166fb64",
+            "name": "Футболка",
+            "code": "000000002"
+        },
+        {
+            "uuid": "78020f6a-9d97-11f1-b9e5-da377166fb64",
+            "name": "Кеды",
+            "code": "000000003"
+        },
+        {
+            "uuid": "78020f6b-9d97-11f1-b9e5-da377166fb64",
+            "name": "Джинсы",
+            "code": "000000004"
+        }
+    ],
+    "error": null,
+    "id": "2000"
+}
+```

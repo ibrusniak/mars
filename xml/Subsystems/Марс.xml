@@ -28,6 +28,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МарсДиспетчерЗапросов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.JRPC2</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МарсОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Товары</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

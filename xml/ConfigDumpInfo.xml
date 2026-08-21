@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.12">
 	<ConfigVersions>
-		<Metadata name="CommonModule.МарсДиспетчерЗапросов" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3" configVersion="e658a52ea796d742949601de13a580e400000000"/>
-		<Metadata name="CommonModule.МарсДиспетчерЗапросов.Module" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3.0" configVersion="8e31a5a7850dc6499a0acee4bd7deeae00000000"/>
-		<Metadata name="CommonModule.МарсОбщегоНазначения" id="bf8d754b-1f40-4bae-9235-ef46a1897427" configVersion="8e0ed9a6b74a464c9fda0dc78db96c2f00000000"/>
-		<Metadata name="CommonModule.МарсОбщегоНазначения.Module" id="bf8d754b-1f40-4bae-9235-ef46a1897427.0" configVersion="6827e4ad345ef345ba416bc61c89c80900000000"/>
-		<Metadata name="Configuration.Марс" id="3b1dea08-cd26-4f1c-a7d6-3c3a4971fc1d" configVersion="1efcad5df7f69646b3d495e8b53b5b8400000000"/>
+		<Metadata name="Catalog.Товары" id="74dfbc78-0c37-46fb-9efd-fe483f1a6e53" configVersion="32746dada58f4b4095f0b8716cdc569a00000000"/>
+		<Metadata name="CommonModule.МарсДиспетчерЗапросов" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3" configVersion="26029b4e072fa94d83a50d1f520b7db200000000"/>
+		<Metadata name="CommonModule.МарсДиспетчерЗапросов.Module" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3.0" configVersion="ac600e1e788d2f4e91f7415eee873f0c00000000"/>
+		<Metadata name="CommonModule.МарсОбщегоНазначения" id="bf8d754b-1f40-4bae-9235-ef46a1897427" configVersion="ee8415acb284204681922f882248349100000000"/>
+		<Metadata name="CommonModule.МарсОбщегоНазначения.Module" id="bf8d754b-1f40-4bae-9235-ef46a1897427.0" configVersion="53e26ea39d751749a2408c0e021fa49d00000000"/>
+		<Metadata name="Configuration.Марс" id="3b1dea08-cd26-4f1c-a7d6-3c3a4971fc1d" configVersion="800ffdd5fae4d941ba405fbd6add31c000000000"/>
 		<Metadata name="Configuration.Марс.ParentConfigurations" id="f3a8fb8c-c3d7-4c23-900f-09ade65a2557.4" configVersion="6e0fcde0eb16194f95d7f5f05b42951100000000"/>
 		<Metadata name="HTTPService.JRPC2" id="45fb5214-fdc3-4722-a814-502440ca0784" configVersion="54574e8db72b24458503e0af0da923a400000000">
 			<Metadata name="HTTPService.JRPC2.URLTemplate.Invoke.Method.POST" id="40ba0891-d009-412c-854f-4cdd7374c11d"/>
@@ -16,8 +17,8 @@
 		<Metadata name="Language.Українська" id="8c2bc5e4-4a44-4c59-86f7-b623bfa3439d" configVersion="51a40219d402df499e5fdaa1fb4e68c100000000"/>
 		<Metadata name="Role.МарсВызовФункцийJsonRpc" id="643492a4-8466-47a6-9f0f-fac543aaa680" configVersion="26536f1236ea5d4f8ae4f0cce43d7ef900000000"/>
 		<Metadata name="Role.МарсВызовФункцийJsonRpc.Rights" id="643492a4-8466-47a6-9f0f-fac543aaa680.0" configVersion="8655b34a6e2941498aea98f5173296a200000000"/>
-		<Metadata name="Role.ПолныеПрава" id="cfc88b85-4797-4097-b244-827ac568ed46" configVersion="3e62a6daa5d4a74483d7b5994c39cea300000000"/>
-		<Metadata name="Role.ПолныеПрава.Rights" id="cfc88b85-4797-4097-b244-827ac568ed46.0" configVersion="bdb9bb7c0d49674c84d2574ae931810500000000"/>
-		<Metadata name="Subsystem.Марс" id="ab0bdb0e-fb68-4439-84de-493c30b3a17a" configVersion="32fdf1e3c66c664b8d5508936274aec800000000"/>
+		<Metadata name="Role.ПолныеПрава" id="cfc88b85-4797-4097-b244-827ac568ed46" configVersion="53f760dd5b773f419788a83341a6838700000000"/>
+		<Metadata name="Role.ПолныеПрава.Rights" id="cfc88b85-4797-4097-b244-827ac568ed46.0" configVersion="9a4a91d8fa968544a5f9a79f32d645da00000000"/>
+		<Metadata name="Subsystem.Марс" id="ab0bdb0e-fb68-4439-84de-493c30b3a17a" configVersion="bac628c3e56f644a9a9a6792b8d82abd00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
