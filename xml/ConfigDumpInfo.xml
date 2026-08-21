@@ -5,7 +5,8 @@
 		<Metadata name="CommonModule.МарсДиспетчерЗапросов.Module" id="c79e7b57-34c3-4fcc-8640-5d6d0d6646e3.0" configVersion="f6c39b4f0babe845860378a92dbac8ae00000000"/>
 		<Metadata name="CommonModule.МарсОбщегоНазначения" id="bf8d754b-1f40-4bae-9235-ef46a1897427" configVersion="bc9321f5151b4440a79bf8d1f8717acd00000000"/>
 		<Metadata name="CommonModule.МарсОбщегоНазначения.Module" id="bf8d754b-1f40-4bae-9235-ef46a1897427.0" configVersion="14aaf5890db3f04c910a722de5bf22d300000000"/>
-		<Metadata name="Configuration.Марс" id="3b1dea08-cd26-4f1c-a7d6-3c3a4971fc1d" configVersion="cd58f21d6212ec498c8337b443629a6b00000000"/>
+		<Metadata name="Configuration.Марс" id="3b1dea08-cd26-4f1c-a7d6-3c3a4971fc1d" configVersion="5ba27304b814cb43a100cf28ce8b164500000000"/>
+		<Metadata name="Configuration.Марс.ParentConfigurations" id="f3a8fb8c-c3d7-4c23-900f-09ade65a2557.4" configVersion="6e0fcde0eb16194f95d7f5f05b42951100000000"/>
 		<Metadata name="HTTPService.JRPC2" id="45fb5214-fdc3-4722-a814-502440ca0784" configVersion="71a3c1a3c85d62429d1967f0c93c10aa00000000">
 			<Metadata name="HTTPService.JRPC2.URLTemplate.Invoke.Method.POST" id="40ba0891-d009-412c-854f-4cdd7374c11d"/>
 			<Metadata name="HTTPService.JRPC2.URLTemplate.Invoke" id="951a77f3-2fd2-445e-bcfb-ac72b690b1ea"/>
