@@ -1,8 +1,6 @@
 # mars
 [Українська](README.uk.md)
 
-:warning: Проект находится в разработке.
-
 Универсальный JSON-RPC 2.0 интерфейс для взаимодействия с информационной базой 1С.
 
 JSON-RPC 2.0 — это лёгкий протокол удалённого вызова методов ([спецификация](https://www.jsonrpc.org/specification)).
@@ -35,7 +33,7 @@ Content-Type: application/json
 ```json
 {
     "jsonrpc": "2.0",
-    "method": "system.ping",
+    "method": "ping",
     "id": 1
 }
 ```
