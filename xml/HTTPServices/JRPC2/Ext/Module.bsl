@@ -26,53 +26,44 @@
 Функция InvokePOST(Запрос)
 	
 	ТелоЗапросаКакСтрока = Запрос.ПолучитьТелоКакСтроку();
-	ЧтениеJSОN = Новый ЧтениеJSON;
-	ЧтениеJSОN.УстановитьСтроку(ТелоЗапросаКакСтрока);
+	
 	Ответ = Новый HTTPСервисОтвет(200);
 	Ответ.Заголовки.Вставить("Content-Type", "application/json");
-	СтруктураОтвета = СтруктураОтвета();
+	
 	Попытка
-		ТелоЗапросаКакСоответствие = ПрочитатьJSON(ЧтениеJSОN, Истина);
+		ТелоЗапросаКакСоответствие = МарсОбщегоНазначения.ДесериализоватьИзJson(ТелоЗапросаКакСтрока);
 	Исключение
-		ЧтениеJSОN.Закрыть();
-		ИнформацияОбОшибке = ИнформацияОбОшибке();
-		СтруктураОшибки = СтруктураОшибки();
-		СтруктураОшибки.code = -32700;
-		СтруктураОшибки.message = КраткоеПредставлениеОшибки(ИнформацияОбОшибке);
-		СтруктураОшибки.data = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке);
-		СтруктураОтвета.error = СтруктураОшибки;
-		Ответ.УстановитьТелоИзСтроки(СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
+		Ио = ИнформацияОбОшибке();
+		СтруктураОтвета = СтруктураОтвета(, СтруктураОшибки(-32700, КраткоеПредставлениеОшибки(Ио), ПодробноеПредставлениеОшибки(Ио)));		
+		Ответ.УстановитьТелоИзСтроки(МарсОбщегоНазначения.СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
 		Возврат Ответ;
 	КонецПопытки;
 	
 	jsonrpc	= ТелоЗапросаКакСоответствие["jsonrpc"];
-	id		= ТелоЗапросаКакСоответствие["id"];
+	id = ТелоЗапросаКакСоответствие["id"];
 	
 	Если jsonrpc = Неопределено ИЛИ jsonrpc <> "2.0" Тогда
-		СтруктураОшибки = СтруктураОшибки();
-		СтруктураОшибки.code = -32700;
-		СтруктураОшибки.message = "'method' - must be a String specifying the version of the JSON-RPC protocol. MUST be exactly ""2.0"".";
-		СтруктураОшибки.data = СтруктураОшибки.message;
-		СтруктураОтвета.error = СтруктураОшибки;
-		СтруктураОтвета.id = id;
-		Ответ.УстановитьТелоИзСтроки(СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
-		Возврат Ответ;
+		ТекстОшибки = "'method' - must be a String specifying the version of the JSON-RPC protocol. MUST be exactly ""2.0"".";
+		СтруктураОтвета = СтруктураОтвета(, СтруктураОшибки(
+			-32700,
+			ТекстОшибки,
+			ТекстОшибки), id);	
+		Ответ.УстановитьТелоИзСтроки(МарсОбщегоНазначения.СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
+		Возврат Ответ;		
 	КонецЕсли;
 	
 	method	= ТелоЗапросаКакСоответствие["method"];
 	
 	Если method = Неопределено ИЛИ ТипЗнч(method) <> Тип("Строка") Тогда
-		СтруктураОшибки = СтруктураОшибки();
-		СтруктураОшибки.code = -32700;
-		СтруктураОшибки.message = "'method' - must be a String containing the name of the method to be invoked. Method names that begin with the word rpc followed by a period character (U+002E or ASCII 46) are reserved for rpc-internal methods and extensions and MUST NOT be used for anything else.";
-		СтруктураОшибки.data = СтруктураОшибки.message;
-		СтруктураОтвета.error = СтруктураОшибки;
-		СтруктураОтвета.id = id;
-		Ответ.УстановитьТелоИзСтроки(СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
-		Возврат Ответ;
+		ТекстОшибки = "'method' - must be a String containing the name of the method to be invoked. Method names that begin with the word rpc followed by a period character (U+002E or ASCII 46) are reserved for rpc-internal methods and extensions and MUST NOT be used for anything else.";
+		СтруктураОтвета = СтруктураОтвета(, СтруктураОшибки(
+			-32700,
+			ТекстОшибки,
+			ТекстОшибки), id);	
+		Ответ.УстановитьТелоИзСтроки(МарсОбщегоНазначения.СериализоватьВJson(СтруктураОтвета), КодировкаТекста.UTF8);
+		Возврат Ответ;		
 	КонецЕсли;
 	
-	ЧтениеJSОN.Закрыть();
 	Возврат Ответ;
 КонецФункции
 
@@ -96,8 +87,8 @@
 // 	It MUST be the same as the value of the id member in the Request Object.
 // 	If there was an error in detecting the id in the Request object (e.g. Parse error/Invalid Request), it MUST be Null.
 // 	Either the result member or error member MUST be included, but both members MUST NOT be included.
-Функция СтруктураОтвета()
-	Возврат Новый Структура("jsonrpc, result, error, id", "2.0");
+Функция СтруктураОтвета(result = Неопределено, error = Неопределено, id = Неопределено)
+	Возврат Новый Структура("jsonrpc, result, error, id", "2.0", result, error, id);
 КонецФункции
 
 // Возвращает структуру ошибки
@@ -128,13 +119,6 @@
 // -32000 to -32099	Server error	Reserved for implementation-defined server-errors.
 // The remainder of the space is available for application defined errors.
 //
-Функция СтруктураОшибки()
-	Возврат Новый Структура("code, message, data");
-КонецФункции
-
-Функция СериализоватьВJson(Структура)
-	ЗаписьJSON = Новый ЗаписьJSON();
-	ЗаписьJSON.УстановитьСтроку(Новый ПараметрыЗаписиJSON(ПереносСтрокJSON.Авто, Символы.Таб));
-	ЗаписатьJSON(ЗаписьJSON, Структура);
-	Возврат ЗаписьJSON.Закрыть();
+Функция СтруктураОшибки(code, message, data)
+	Возврат Новый Структура("code, message, data", code, message, data);
 КонецФункции
