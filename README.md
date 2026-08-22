@@ -25,7 +25,8 @@ JSON-RPC 2.0 — это лёгкий протокол удалённого вы�
 
 можно выполнять POST-запросы по протоколу JSON-RPC 2.0
 
-Пример:
+Примеры:
+Запрос:
 ```text
 POST /mars/hs/jrpc/invoke HTTP/1.1
 Content-Type: application/json
@@ -47,7 +48,7 @@ Content-Type: application/json
 }
 ```
 
-Приклад:
+Запрос:
 ```text
 POST /mars/hs/jrpc/invoke HTTP/1.1
 Content-Type: application/json
@@ -59,7 +60,7 @@ Content-Type: application/json
     "id": "2000"
 }
 ```
-Відповідь:
+Ответ:
 ```json
 {
     "jsonrpc": "2.0",
